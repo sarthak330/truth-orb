@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <title>Crack Overlay</title>
+  <g stroke="#000000" stroke-width="2" fill="none">
+    <!-- Center point -->
+    <circle cx="250" cy="250" r="10" fill="#000" opacity="0.8" />
+    
+    <!-- Main cracks -->
+    <!-- Top right -->
+    <path d="M250,250 L340,160 M340,160 L370,120 M340,160 L320,120" stroke-width="3" />
+    
+    <!-- Right -->
+    <path d="M250,250 L380,250 M380,250 L430,240 M380,250 L420,270" stroke-width="3" />
+    
+    <!-- Bottom right -->
+    <path d="M250,250 L330,350 M330,350 L370,390 M330,350 L350,380" stroke-width="3" />
+    
+    <!-- Bottom -->
+    <path d="M250,250 L250,370 M250,370 L270,420 M250,370 L230,410" stroke-width="3" />
+    
+    <!-- Bottom left -->
+    <path d="M250,250 L170,350 M170,350 L140,390 M170,350 L190,400" stroke-width="3" />
+    
+    <!-- Left -->
+    <path d="M250,250 L130,250 M130,250 L80,260 M130,250 L90,230" stroke-width="3" />
+    
+    <!-- Top left -->
+    <path d="M250,250 L170,160 M170,160 L130,120 M170,160 L150,110" stroke-width="3" />
+    
+    <!-- Top -->
+    <path d="M250,250 L250,130 M250,130 L270,80 M250,130 L230,70" stroke-width="3" />
+    
+    <!-- Secondary cracks -->
+    <path d="M250,250 L290,210 M290,210 L320,190" stroke-width="2" />
+    <path d="M250,250 L210,210 M210,210 L180,190" stroke-width="2" />
+    <path d="M250,250 L290,290 M290,290 L320,310" stroke-width="2" />
+    <path d="M250,250 L210,290 M210,290 L180,310" stroke-width="2" />
+    
+    <!-- Additional smaller cracks -->
+    <path d="M250,250 L270,230 M270,230 L285,215" stroke-width="1.5" />
+    <path d="M250,250 L230,230 M230,230 L215,215" stroke-width="1.5" />
+    <path d="M250,250 L270,270 M270,270 L285,285" stroke-width="1.5" />
+    <path d="M250,250 L230,270 M230,270 L215,285" stroke-width="1.5" />
+    
+    <!-- Tiny fractures -->
+    <path d="M250,250 L260,240 M260,240 L265,235" stroke-width="1" />
+    <path d="M250,250 L240,240 M240,240 L235,235" stroke-width="1" />
+    <path d="M250,250 L260,260 M260,260 L265,265" stroke-width="1" />
+    <path d="M250,250 L240,260 M240,260 L235,265" stroke-width="1" />
+  </g>
+  
+  <!-- Radial gradient for shatter effect -->
+  <radialGradient id="shatterGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+    <stop offset="0%" style="stop-color:#000000;stop-opacity:0.8" />
+    <stop offset="20%" style="stop-color:#000000;stop-opacity:0.3" />
+    <stop offset="40%" style="stop-color:#000000;stop-opacity:0.1" />
+    <stop offset="100%" style="stop-color:#000000;stop-opacity:0" />
+  </radialGradient>
+  
+  <circle cx="250" cy="250" r="30" fill="url(#shatterGradient)" />
+</svg>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mystic Lie Detector Orb</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Mystic Lie Detector Orb</h1>
+            <p class="subtitle">Speak your truth... or not 👁️✨</p>
+        </header>
+
+        <main>
+            <div class="orb-container">
+                <div class="orb" id="orb">
+                    <div class="orb-inner"></div>
+                    <div class="orb-glow"></div>
+                    <img src="assets/crack_overlay.png" id="crack-overlay" class="crack-overlay hidden" alt="Truth crack">
+                </div>
+                
+                <div class="truth-meter">
+                    <div class="truth-label">✧ Truth Index ✧</div>
+                    <div class="truth-value" id="truth-value">--</div>
+                </div>
+            </div>
+
+            <div class="conversation-box" id="conversation-box">
+                <p class="orb-message">🧠 I am the Mystical Lie Detector Orb. Speak your statement, and I shall reveal the truth within. ✨</p>
+            </div>
+
+            <div class="controls">
+                <button id="speak-btn" class="speak-btn">
+                    <i class="fas fa-microphone"></i> Speak to the Orb
+                </button>
+                <div id="recording-indicator" class="recording-indicator hidden">
+                    <div class="pulse"></div>
+                    <span>Listening to your words...</span>
+                </div>
+                <div id="analyzing-indicator" class="analyzing-indicator hidden">
+                    <div class="spinner"></div>
+                    <span>The Orb is revealing the truth...</span>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>✧ Focus your intentions and speak clearly for best results ✧</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
